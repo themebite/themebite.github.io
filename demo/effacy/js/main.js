@@ -240,7 +240,7 @@ $(document).ready(function() {
 
       // Google Map Toggle
    
-        var $map = $('#gmap-wrapper');
+        var $map = $('.google-map-container');
         var $toggleButton = $('#mapToggle');
         // Hide the map
         $map.hide();

@@ -352,7 +352,9 @@ ul {
 /* ============================
     Navigation
 =============================== */
-
+.header-area {
+    z-index: 20;
+}
 .navbar-custom {
     background-color: #fff;
     border: 0;
