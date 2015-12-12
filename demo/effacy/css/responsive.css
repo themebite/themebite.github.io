@@ -289,6 +289,13 @@ span.count-description {
 .contact-button-padding {
 	margin-top: 10px;
 }
+.contact-form-icon input, .contact-form-icon textarea {
+  padding-left: 32px !important;
+}
+.contact-form-icon .fa {
+  font-size: 12px;
+  padding: 8px 12px;
+}
 .goolge-map-section .toggle-map-button button.gmap-btn {
   font-size: 12px;
   padding: 10px 0;

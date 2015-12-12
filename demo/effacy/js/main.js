@@ -38,7 +38,7 @@ $(document).ready(function() {
       backgroundColor: "#ff5959",
       barHeight: 3,
       minimumTime: 3000,
-      fadeOutTime: 3000,
+      fadeOutTime: 2000,
       percentage: true,
     });
     

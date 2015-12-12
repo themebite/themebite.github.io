@@ -82,3 +82,6 @@ span {
 button.sl-prev .fa, button.sl-next .fa {
     color: #ff5959;
 }
+.contact-form-section button.btn-contact:hover {
+    border: 1px solid #ff5959;
+}
