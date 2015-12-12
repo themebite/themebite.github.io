@@ -117,9 +117,10 @@ $(document).ready(function() {
     if ($('#grid').length > 0) {
         // Initialize plugin
         var $grid = $('#grid');
-
-        $grid.shuffle({
+        $(window).load(function(){
+          $grid.shuffle({
             itemSelector: '.thumbnails' // The Child Item of the parent #grid
+          });
         });
 
         // Re-Shuffle the gallery
