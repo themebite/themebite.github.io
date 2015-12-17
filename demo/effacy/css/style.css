@@ -227,6 +227,9 @@ ul {
 .section-padding {
     padding: 130px 0;
 }
+.morphext > .animated {
+    display: inline-block;
+}
 
 .section-title {
     font-size: 30px;
@@ -428,14 +431,17 @@ ul {
 .hero-particle-bg {
     background: url("../img/bg/particle/particle-2.jpg") no-repeat scroll center center / cover ;
 }
-.hero-parallax-bg::before , .hero-particle-bg::before {
+.text-rotator-bg {
+    background: url("../img/bg/text-rotator/rotator-bg1.jpg") no-repeat fixed center center / cover ;
+}
+.hero-parallax-bg::before , .hero-particle-bg::before , .text-rotator-bg::before {
     position: absolute;
     left: 0;
     top: 0;
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
 }
 .slider-caption h1 {
   font-size: 72px;
@@ -449,8 +455,11 @@ ul {
     font-weight: 400;
     letter-spacing: 0.2rem;
 }
-.hero-parallax-bg .slider-caption h1 , .hero-parallax-bg .slider-caption h5 , .hero-particle-bg .slider-caption h1 , .hero-particle-bg .slider-caption h5 {
+.hero-parallax-bg .slider-caption h1 , .hero-parallax-bg .slider-caption h5 , .hero-particle-bg .slider-caption h1 , .hero-particle-bg .slider-caption h5 , .text-rotator-bg .slider-caption h5 {
     color: #fff;
+}
+.text-rotator-bg h1 {
+    font-family: 'Roboto', sans-serif;
 }
 /* Paricle BG */
 #particles-js {
