@@ -76,7 +76,7 @@ span {
 .portfolio-button button.portfolio-btn:hover {
     background-color: #ff5959;
 }
-.thumbnails:hover span.portfolio-overlay {
+.thumbnails:hover .portfolio-overlay {
     background-color: #ff5959;
 }
 button.sl-prev .fa, button.sl-next .fa {

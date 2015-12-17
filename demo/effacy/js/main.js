@@ -21,12 +21,20 @@ Developed and Designed By: ThemeBite
 $(window).load(function() {
 
     "use strict";
+    
+    // Parallax Effect
+    (function () {
 
-    // Full Screen Backgrounds
-    $(".tb-fullScreen").height($(window).height());
-    $(window).resize(function(){
-        $(".tb-fullScreen").height($(window).height());
-    });
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+         
+        } else {
+            $(window).stellar({
+                horizontalScrolling: false,
+                responsive: true,
+            });
+        }
+
+    }());
 
 
 });
@@ -35,13 +43,13 @@ $(document).ready(function() {
     // PreLoader
     $("body").queryLoader2({
       // Preloader options
-      backgroundColor: "#ff5959",
-      barHeight: 3,
+      backgroundColor: "#34495e",
+      barHeight: 2,
       minimumTime: 3000,
       fadeOutTime: 2000,
       percentage: true,
     });
-    
+
     // Sticky Menu
      $(".header-area").sticky({topSpacing:0});
 
@@ -155,100 +163,108 @@ $(document).ready(function() {
             $(this).off('inview');
         }
     });
+    
+     // Google Map toggle
+     var $map = $('.google-map-container');
+     var $toggleButton = $('#mapToggle');
+     // Hide the map
+
+     $map.hide();
+     
+     // we need to load the map once
+     // with this variable 
+     // we will keep track of that
+     var isMapLoaded = false;
+
+     // Show and Toggle It
+     $toggleButton.click(function() {
+       $map.slideToggle({
+          complete: function() {
+            // if map is not loaded
+            if(!isMapLoaded) {
+              // first load the map
+
+              // Google Map Options
+              var map;
+
+              map = new GMaps({
+                  el: '#gmap-wrapper',
+                  lat: 22.3590557, //Replace Here Location Google Map Lat
+                  lng: 91.8213111, //Replace Here Location Google Map Lng
+                  scrollwheel:false,
+                  zoom: 17,
+                  zoomControl : true,
+                  panControl : true,
+                  streetViewControl : true,
+                  mapTypeControl: false,
+                  overviewMapControl: false,
+                  clickable: true
+              });
+
+              var image = '';
+              map.addMarker({
+                  lat: 22.3590557, //Replace Here Location Google Map Lat
+                  lng: 91.8213111, //Replace Here Location Google Map Lat
+                  icon: image,
+                  animation: google.maps.Animation.DROP,
+                  verticalAlign: 'bottom',
+                  horizontalAlign: 'center',
+                  backgroundColor: '#d9d9d9',
+              });
 
 
+              var styles = [ 
 
+              {
+                  "featureType": "road",
+                  "stylers": [
+                  { "color": "#ffffff" }
+                  ]
+              },{
+                  "featureType": "water",
+                  "stylers": [
+                  { "color": "#99b3cc" }
+                  ]
+              },{
+                  "featureType": "landscape",
+                  "stylers": [
+                  { "color": "#f2efe9" }
+                  ]
+              },{
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                  { "color": "#d3cfcf" }
+                  ]
+              },{
+                  "featureType": "poi",
+                  "stylers": [
+                  { "color": "#bfbfbf" }
+                  ]
+              },{
+                  "elementType": "labels.text",
+                  "stylers": [
+                  { "saturation": 1 },
+                  { "weight": 0.1 },
+                  { "color": "#000000" }
+                  ]
+              }
 
-    // Google Map Options
-    jQuery(function ($) {
-      
-      'use strict';
+              ];
 
-      var map;
+              map.addStyle({
+                  styledMapName:"Styled Map",
+                  styles: styles,
+                  mapTypeId: "map_style"  
+              });
 
-      map = new GMaps({
-          el: '#gmap-wrapper',
-          lat: 22.3590557, //Replace Here Location Google Map Lat
-          lng: 91.8213111, //Replace Here Location Google Map Lng
-          scrollwheel:false,
-          zoom: 17,
-          zoomControl : true,
-          panControl : true,
-          streetViewControl : true,
-          mapTypeControl: false,
-          overviewMapControl: false,
-          clickable: true
-      });
-
-      var image = '';
-      map.addMarker({
-          lat: 22.3590557, //Replace Here Location Google Map Lat
-          lng: 91.8213111, //Replace Here Location Google Map Lat
-          icon: image,
-          animation: google.maps.Animation.DROP,
-          verticalAlign: 'bottom',
-          horizontalAlign: 'center',
-          backgroundColor: '#d9d9d9',
-      });
-
-
-      var styles = [ 
-
-      {
-          "featureType": "road",
-          "stylers": [
-          { "color": "#ffffff" }
-          ]
-      },{
-          "featureType": "water",
-          "stylers": [
-          { "color": "#99b3cc" }
-          ]
-      },{
-          "featureType": "landscape",
-          "stylers": [
-          { "color": "#f2efe9" }
-          ]
-      },{
-          "elementType": "labels.text.fill",
-          "stylers": [
-          { "color": "#d3cfcf" }
-          ]
-      },{
-          "featureType": "poi",
-          "stylers": [
-          { "color": "#bfbfbf" }
-          ]
-      },{
-          "elementType": "labels.text",
-          "stylers": [
-          { "saturation": 1 },
-          { "weight": 0.1 },
-          { "color": "#000000" }
-          ]
-      }
-
-      ];
-
-      map.addStyle({
-          styledMapName:"Styled Map",
-          styles: styles,
-          mapTypeId: "map_style"  
-      });
-
-      map.setStyle("map_style");
-    }());
-
-      // Google Map Toggle
-   
-        var $map = $('.google-map-container');
-        var $toggleButton = $('#mapToggle');
-        // Hide the map
-        $map.hide();
-        // Show and Toggle It
-        $toggleButton.click(function() {
-            $map.slideToggle();
-        });
+              map.setStyle("map_style");
+              
+              // then make that variable true
+              isMapLoaded = true;
+            }
+          }
+       });
+     });
 
      
 });

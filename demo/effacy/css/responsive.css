@@ -90,7 +90,10 @@
 #gmap-wrapper {
   height: 300px;
 }
-    
+.portfolio-showcase #grid .thumbnails {
+  width: 33.33%;
+}
+
 }
 
 /* Mobile Layout: 320px. */
@@ -307,8 +310,17 @@ span.count-description {
   font-size: 14px;
   padding: 5px 10px;
 }
+.portfolio-showcase #grid .thumbnails {
+  width: 100%;
+}
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
-
+.portfolio-showcase #grid .thumbnails {
+  width: 50%;
+}
+.portfolio-filter-nav ul li {
+  font-size: 12px;
+  padding: 5 10px;
+}
 }
