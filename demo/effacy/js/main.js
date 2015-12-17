@@ -54,6 +54,7 @@ $(document).ready(function() {
     $(".header-area").sticky({topSpacing:0});
 
     // Text Rotator
+    if ($('#js-rotating').length > 0) {
     $("#js-rotating").Morphext({
       // The [in] animation type. Refer to Animate.css for a list of available animations.
       animation: "lightSpeedIn",
@@ -65,6 +66,7 @@ $(document).ready(function() {
           // Called after the entrance animation is executed.
       }
     });
+    }
 
     // Testimonial Carousel 
     $("#testimonial-carousel").owlCarousel({
