@@ -422,7 +422,7 @@ ul {
     z-index: 15;
 }
 
-.static-bg {
+.static-bg , .slider-bg-1 , .slider-bg-2 {
     background: url("../img/bg/hero-bg.jpg") no-repeat scroll center center / cover ;
 }
 .hero-parallax-bg {
@@ -468,6 +468,118 @@ ul {
   height: 100%;
   z-index: 10;
 }
+
+/*Hero Slider */
+.slider-section {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.hero-slider {
+  overflow: hidden;
+  position: relative;
+}
+.hero-slider img {
+  background-size: cover;
+  width: 100%;
+}
+.carousel-fade .carousel-inner .item {
+    max-height: 700px;
+    opacity:.8;
+    -webkit-transition-property:opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    transition-property:opacity
+}
+.carousel-fade .carousel-inner .active { 
+    opacity: 1 
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right { 
+    opacity: 1 
+}
+.carousel-fade .carousel-inner .item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+}
+.carousel-fade .carousel-control {
+    z-index: 20 
+}
+.hero-slider .carousel-caption {
+  bottom: inherit;
+  color: #fff;
+  left: 0;
+  margin-top: -120px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  z-index: 15;
+}
+.hero-slider .carousel-caption .slider-caption h1 , .hero-slider .carousel-caption .slider-caption h5 , .hero-slider .carousel-caption .slider-caption p {
+    color: #fff;
+}
+.carousel-fade .carousel-inner .item::after {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.control-one .left.carousel-control {
+  left: 0;
+}
+.control-one .right.carousel-control {
+  right: 0;
+}
+.control-one .carousel-control {
+  background-color: #000;
+  background-image: none;
+  border-radius: 0;
+  font-size: 40px;
+  height: 50px;
+  line-height: 46px;
+  margin-top: -25px;
+  opacity: 1;
+  text-shadow: none;
+  top: 50%;
+  width: 50px;
+}
+.carousel-fade .carousel-control {
+  z-index: 1;
+}
+.control-one .carousel-control:hover {
+    color: #fff;
+}
+.control-one .carousel-control:hover span {
+    color: #fff;
+}
+
+.delay-1 {
+  animation-delay: 300ms;
+}
+.delay-3 {
+  animation-delay: 1200ms;
+}
+.delay-4 {
+  animation-delay: 1500ms;
+}
+
 /* ============================
     About Us
 =============================== */

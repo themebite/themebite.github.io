@@ -85,3 +85,7 @@ button.sl-prev .fa, button.sl-next .fa {
 .contact-form-section button.btn-contact {
 	background-color: #3498db;
 }
+.control-one .carousel-control:hover {
+    background-color: #3498db;
+}
+

@@ -45,7 +45,7 @@ $(document).ready(function() {
       // Preloader options
       backgroundColor: "#34495e",
       barHeight: 2,
-      minimumTime: 3000,
+      minimumTime: 1000,
       fadeOutTime: 2000,
       percentage: true,
     });
