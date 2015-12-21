@@ -273,13 +273,7 @@ ul {
     color: #fff;
     line-height: 35px;
 }
-.sub-title {
-    margin: 0;
-    line-height: 25px;
-    font-size: 16px;
-    color: #777777;
-    position: relative;
-}
+
 
 .row-content{
     margin-top: 80px;
@@ -1143,6 +1137,9 @@ box-shadow: inset 0px 2px 25px -8px rgba(0,0,0,0.76);
 }
 .contact-title , .contact-subtitle {
     color: #fff;
+}
+.contact-subtitle {
+    position: relative;
 }
 .contact-us-section:before {
     position: absolute;
