@@ -1,0 +1,72 @@
+#custumize-style {
+    text-align: center;
+    background-color: #333;
+    border-radius: 0 0 3px;
+    left: 0;
+    padding: 12px 0;
+    position: fixed;
+    top: 30%;
+    width: 134px;
+    z-index: 99999999;
+}
+#custumize-style div {
+	padding: 0 8px;
+	padding-bottom: 5px;
+}
+#custumize-style h3 {
+  color: #fff;
+  font-family: "Raleway",sans-serif;
+  font-size: 1.3em;
+  letter-spacing: unset;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+#custumize-style .switcher {
+  background: #333 none repeat scroll 0 0;
+  border-radius: 0 3px 3px 0;
+  color: #454545;
+  display: block;
+  font-size: 12px;
+  height: 40px;
+  line-height: 46px;
+  position: absolute;
+  right: -40px;
+  text-align: center;
+  top: 0;
+  width: 40px;
+}
+.fa-sliders { margin-top: 5px;}
+.colors-style {
+	list-style: none;
+	margin: 0px;
+	padding: 0;
+	overflow: hidden;
+}
+.colors-style li {
+	float: left;
+	margin: 4px;
+}
+.colors-style li a {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  width: 45px;
+}
+.other-style { margin-top: 10px !important;}
+.default-color {
+	background: #ff5959;
+}
+.green {
+	background: #2ecc71;
+}
+.purple {
+	 background: #8e44ad;
+}
+.blue {
+	 background: #3498db;
+}
+.aqua {
+	 background: #1abc9c;
+}

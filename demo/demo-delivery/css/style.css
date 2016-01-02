@@ -1,0 +1,67 @@
+/* Base Styles: */
+
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100% }
+body {
+
+}
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+a:hover { text-decoration: none }
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active > a {
+    background: none;
+    outline: 0;
+    color: #CFC91D;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #222 none repeat scroll 0 0;
+}
+
+
+/* Elements Style Start Here */
+.swMain .stepContainer div.content{
+    padding: 10px;
+}
+ul.contribution-buttons li {
+    float: left;
+}
+ul.contribution-buttons {
+    margin-top: 20px;
+}
+.btn-donate {
+  font-size: 20px;
+  margin: 10px;
+  padding: 17px 45px;
+}
+.swMain .stepContainer .StepTitle {
+    margin-bottom: 25px;
+}
+.payment-icons {
+  margin-bottom: 20px;
+}
+.payment-icons .fa {
+  color: #8CC63F;
+  font-size: 40px;
+  margin: 0 4px;
+}

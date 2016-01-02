@@ -316,6 +316,22 @@ span.count-description {
 .portfolio-showcase #grid .thumbnails {
   width: 100%;
 }
+#main-slide .slider-content {
+  top: 60%;
+}
+#main-slide .item.active .slider-content h1 {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+#main-slide .item.active .slider-content h5 {
+  font-size: 12px;
+}
+#main-slide .carousel-control i {
+  background: #000 none repeat scroll 0 0;
+  font-size: 14px;
+  padding: 0px 8px;
+}
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 

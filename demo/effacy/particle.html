@@ -23,8 +23,17 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Color Switcher Style -->
+        <link rel="stylesheet" href="switcher/switcher.css">
+
         <!-- Color Styles -->
-        <link rel="stylesheet" href="css/colors/color-green.css">
+        <link rel="stylesheet" href="css/colors/blue.css">
+        <link rel="stylesheet" href="css/colors/aqua.css">
+        <link rel="stylesheet" href="css/colors/purple.css">
+        <link rel="stylesheet" href="css/colors/default-color.css">
+        <link rel="stylesheet" href="css/colors/green.css">
+        
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="css/responsive.css">
 
@@ -63,7 +72,7 @@
               <div class="collapse navbar-collapse" id="tb-nav-collapse">
           
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="#top">Home</a></li>
+                    <li class="active"><a class="page-scroll" href="#top">Home</a></li>
                     <li><a class="page-scroll" href="#about">About</a></li>
                     <li><a class="page-scroll" href="#testimonial">Testimonial</a></li>
                     <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
@@ -873,6 +882,23 @@
     </footer>
 
     <!-- End Of Footer Section -->
+    <!-- Style Switcher -->
+    <div style="display:none" class="hide-color">
+        <div id="custumize-style">
+            <a href="#" class="switcher open"> <span class="icon-switcher"><i class="fa fa-cog fa-2x"></i></span></a>
+            <div>
+                <h3 class="color-option-title">Colors</h3>
+                <ul class="colors-style" id="custom-color">
+                    <li><a href="#" class="default-color"></a></li>
+                    <li><a href="#" class="green"></a></li>
+                    <li><a href="#" class="purple"></a></li>
+                    <li><a href="#" class="blue"></a></li>
+                    <li><a href="#" class="aqua"></a></li>
+                </ul>  
+            </div>
+        </div> 
+    </div>
+    <!-- End Style Switcher -->
 
 
     <!-- JS Files -->
@@ -880,6 +906,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- jQuery Easing -->
     <script src="js/jquery.easing.min.js"></script>
+    <!-- Style Switcher JS -->
+    <script src="switcher/switcher.js"></script>
     <!-- PreLoader -->
     <script src="js/queryloader2.min.js"></script>
     <!-- Particle JS -->

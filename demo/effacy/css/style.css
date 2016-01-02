@@ -204,6 +204,7 @@ ul {
   -webkit-transition: all 0.3s ease-in-out 0s;
           transition: all 0.3s ease-in-out 0s;
   letter-spacing: 1px;
+  letter-spacing: 1px;
   letter-spacing: 0.1rem;
 }
 .form-control::-webkit-input-placeholder {
@@ -238,6 +239,7 @@ ul {
     margin-bottom: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    letter-spacing: 3px;
     letter-spacing: 0.2rem;
     position: relative;
 }
@@ -247,6 +249,7 @@ ul {
     color: #333333;
     margin-bottom: 50px;
     text-transform: uppercase;
+    letter-spacing: 3px;
     letter-spacing: 3px;
     letter-spacing: 0.2rem;
     position: relative;
@@ -416,7 +419,7 @@ ul {
     z-index: 15;
 }
 
-.static-bg , .slider-bg-1 , .slider-bg-2 {
+.static-bg {
     background: url("../img/bg/hero-bg.jpg") no-repeat scroll center center / cover ;
 }
 .hero-parallax-bg {
@@ -428,7 +431,7 @@ ul {
 .text-rotator-bg {
     background: url("../img/bg/text-rotator/rotator-bg1.jpg") no-repeat fixed center center / cover ;
 }
-.hero-parallax-bg::before , .hero-particle-bg::before , .text-rotator-bg::before {
+.hero-parallax-bg:before , .hero-particle-bg:before , .text-rotator-bg:before {
     position: absolute;
     left: 0;
     top: 0;
@@ -440,6 +443,7 @@ ul {
 .slider-caption h1 , #main-slide .item.active .slider-content h1 {
   font-size: 72px;
   letter-spacing: 3px;
+  letter-spacing: 3px;
   letter-spacing: 0.2rem;
   margin-bottom: 25px;
 }
@@ -447,6 +451,7 @@ ul {
     color: #3f3f3f;
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 3px;
     letter-spacing: 0.2rem;
 }
 .hero-parallax-bg .slider-caption h1 , .hero-parallax-bg .slider-caption h5 , .hero-particle-bg .slider-caption h1 , .hero-particle-bg .slider-caption h5 , .text-rotator-bg .slider-caption h5 {
@@ -471,7 +476,7 @@ ul {
     width: 100%;
     position: relative;
 }
-#main-slide .carousel-inner .item::after {
+#main-slide .carousel-inner .item:after {
   background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
   bottom: 0;
   content: "";
@@ -486,18 +491,16 @@ ul {
 #main-slide .item .slider-content {
   z-index: 0;
   opacity: 0;
+  filter: alpha(opacity=0);
   -webkit-transition: opacity 100ms;
-  -moz-transition: opacity 100ms;
-  -o-transition: opacity 100ms;
   transition: opacity 100ms;
   text-transform: uppercase;
 }
 #main-slide .item.active .slider-content {
   z-index: 1;
   opacity: 1;
+  filter: alpha(opacity=100);
   -webkit-transition: opacity 100ms;
-  -moz-transition: opacity 100ms;
-  -o-transition: opacity 100ms;
   transition: opacity 100ms;
   text-transform: uppercase;
 }
@@ -556,10 +559,7 @@ ul {
     line-height: 36px;
     font-size: 32px;
     padding: 15px 20px;
-    -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
 
@@ -604,6 +604,41 @@ ul {
     animation: bounceInDown 1s ease-in 800ms both;
 }
 
+/* Carousel Fade Effect */
+.carousel-fade .carousel-inner .item {
+    max-height: 700px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -webkit-transition-property: opacity;
+            transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.carousel-fade .carousel-inner .item:after {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.carousel-fade .carousel-control {
+    z-index: 20;
+}
+
 
 /* ============================
     About Us
@@ -612,7 +647,7 @@ ul {
     padding: 100px 40px 60px 107px;
 }
 .about-us-right {
-    background: #1f1f1f none repeat scroll 0 0;
+    background: #333 none repeat scroll 0 0;
     padding: 60px 110px 60px 75px;
 }
 .about-us-right .media {
@@ -1091,6 +1126,7 @@ box-shadow: inset 0px 2px 25px -8px rgba(0,0,0,0.76);
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 1px;
+    letter-spacing: 1px;
     letter-spacing: 0.1rem;
 }
 
@@ -1206,6 +1242,7 @@ box-shadow: inset 0px 2px 25px -8px rgba(0,0,0,0.76);
     border: none;
     padding: 20px 0;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     letter-spacing: 0.1rem;
 }
 
@@ -1225,6 +1262,7 @@ box-shadow: inset 0px 2px 25px -8px rgba(0,0,0,0.76);
 .footer-section .copyright-info a {
     color: #fff;
     font-size: 16px;
+    letter-spacing: 1px;
     letter-spacing: 1px;
     letter-spacing: 0.1rem;
 }

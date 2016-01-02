@@ -117,17 +117,17 @@ a:hover { text-decoration: none }
     text-transform: uppercase;
 }
 
-.demo-buttons button.btn-buy {
+.demo-buttons a.btn-buy {
   background: #ff5959 none repeat scroll 0 0;
   border: 1px solid #ff5959;
   border-radius: 0;
   color: #fff;
   font-size: 12px;
   letter-spacing: 0.2rem;
-  padding: 8px 36px;
+  padding: 8px 20px;
   text-transform: uppercase;
 }
-.demo-buttons button.btn-more {
+.demo-buttons a.btn-more {
    background: transparent;
    border: 1px solid #fff;
    border-radius: 0;
@@ -147,7 +147,7 @@ a:hover { text-decoration: none }
     color: #fff;
 }
 .demo-buttons .btn {
-   margin: 0 20px;
+   margin: 0 10px;
 }
 .demo-nav h6 {
   color: #fff;
