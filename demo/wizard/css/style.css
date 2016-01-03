@@ -49,11 +49,22 @@ ul.contribution-buttons li {
 ul.contribution-buttons {
     margin-top: 20px;
 }
+.btn.btn-default.btn-lg.btn-donate.btn-customAmount {
+    padding: 12px 25px;
+}
+#customAmount {
+    position: relative;
+    width: 90px;
+}
 .btn-donate {
   font-size: 20px;
   margin: 10px;
   padding: 17px 45px;
+  transition: all 0.3s ease;
 }
+.btn-donate:hover , .active {
+  background-color: #8CC63F !important;
+} 
 .swMain .stepContainer .StepTitle {
     margin-bottom: 25px;
 }
@@ -64,4 +75,11 @@ ul.contribution-buttons {
   color: #8CC63F;
   font-size: 40px;
   margin: 0 4px;
+}
+.form-step {
+  min-height: 500px;
+}
+.employment-info {
+  margin: 30px 0;
+  font-weight: bold;
 }

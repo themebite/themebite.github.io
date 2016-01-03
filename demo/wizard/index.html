@@ -40,7 +40,7 @@
         <section class="main-wizard-section section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-1">
+                    <div class="col-md-12">
                         <!-- Wizard Start -->
                         <div id="wizard" class="swMain">
                           <ul>
@@ -69,50 +69,55 @@
                           <div id="step-1">   
                               <h2 class="StepTitle">Your Contribution</h2>
                                <!-- step content -->
-                               <ul class="contribution-buttons nav">
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$5</label></li>
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$25</label></li>
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$35</label></li>
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$55</label></li>
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$100</label></li>
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$200</label></li>
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$500</label></li>
-                                   <li><label class="btn btn-default btn-lg btn-donate" for="">$2700</label></li>
-                               </ul>
+                               <div class="contribution-buttons nav">
+                                   <button class="btn btn-default btn-lg btn-donate">$5</button>
+                                   <button class="btn btn-default btn-lg btn-donate">$25</button>
+                                   <button class="btn btn-default btn-lg btn-donate">$50</button>
+                                   <button class="btn btn-default btn-lg btn-donate">$100</button>
+                                   <button class="btn btn-default btn-lg btn-donate">$200</button>
+                                   <button class="btn btn-default btn-lg btn-donate">$500</button>
+                                   <button class="btn btn-default btn-lg btn-donate">$2700</button>
+                                   <a>
+                                    <label class="btn btn-default btn-lg btn-donate btn-customAmount" for="contribution_lineitems_attributes_0_amount_other">
+                                      $<input type="text" name="contribution[lineitems_attributes][0][amount_other]" id="customAmount" autocomplete="off" class="other-amount other-text input-mini">
+                                    </label>
+                                  </a>
+                               </div>
                           </div>
-                          <div id="step-2">
+                          <div id="step-2" class="form-step">
                               <h2 class="StepTitle">Personal Information</h2> 
                                <!-- step content -->
-                                <form class="form-horizontal" role="form">
+                                <form class="form-horizontal" role="form" data-toggle="validator">
                                   <div class="form-group">
                                     <label class="control-label col-sm-2" for="name">Name:</label>
                                     <div class="col-sm-4">
-                                      <input type="text" class="form-control" id="fisrtName" placeholder="First Name">
+                                      <input type="text" class="form-control" id="fisrtName" placeholder="First Name" required>
                                     </div>
                                     <div class="col-sm-4">
-                                      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                      <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
                                     </div>
                                   </div>
                                   <div class="form-group">
                                     <label class="control-label col-sm-2" for="email">Email:</label>
                                     <div class="col-sm-4">
-                                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                                     </div>
                                   </div>
                                   
                                   <div class="form-group">
                                     <label class="control-label col-sm-2" for="address">Address:</label>
                                     <div class="col-sm-6">
-                                      <input type="text" class="form-control" id="address" placeholder="Number, Street, Apt">
+                                      <input type="text" class="form-control" id="address" placeholder="Number, Street, Apt" required>
                                     </div>
                                     <div class="col-sm-2">
-                                      <input type="text" class="form-control" id="number" placeholder="zip">
+                                      <input type="text" class="form-control" id="number" placeholder="zip" required>
                                     </div>
                                   </div>
                                   <div class="form-group">
                                     <label class="control-label col-sm-2" for="country">Country:</label>
                                     <div class="col-sm-3">
-                                      <select class="form-control">
+                                      <select class="form-control" required>
+                                        <option value="">Country</option>
                                         <option value="AF">Afghanistan</option>
                                         <option value="AX">Åland Islands</option>
                                         <option value="AL">Albania</option>
@@ -365,7 +370,105 @@
                                     </select>
                                     </div>
                                     <div class="col-sm-3">
-                                      <input type="text" class="form-control" id="city" placeholder="City">
+                                      <input type="text" class="form-control" id="city" placeholder="City" required>
+                                    </div>
+                                    <div class="col-sm-2">
+                                      <select class="form-control" required>
+                                        <option value="">State</option>
+                                        <option value="AA">AA</option>
+                                        <option value="AE">AE</option>
+                                        <option value="AK">AK</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AR">AR</option>
+                                        <option value="AS">AS</option>
+                                        <option value="AZ">AZ</option>
+                                        <option value="CA">CA</option>
+                                        <option value="CO">CO</option>
+                                        <option value="CT">CT</option>
+                                        <option value="DC">DC</option>
+                                        <option value="DE">DE</option>
+                                        <option value="FL">FL</option>
+                                        <option value="GA">GA</option>
+                                        <option value="GU">GU</option>
+                                        <option value="HI">HI</option>
+                                        <option value="IA">IA</option>
+                                        <option value="ID">ID</option>
+                                        <option value="IL">IL</option>
+                                        <option value="IN">IN</option>
+                                        <option value="KS">KS</option>
+                                        <option value="KY">KY</option>
+                                        <option value="LA">LA</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MD">MD</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MI">MI</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MO">MO</option>
+                                        <option value="MP">MP</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MT">MT</option>
+                                        <option value="NC">NC</option>
+                                        <option value="ND">ND</option>
+                                        <option value="NE">NE</option>
+                                        <option value="NH">NH</option>
+                                        <option value="NJ">NJ</option>
+                                        <option value="NM">NM</option>
+                                        <option value="NV">NV</option>
+                                        <option value="NY">NY</option>
+                                        <option value="OH">OH</option>
+                                        <option value="OK">OK</option>
+                                        <option value="OR">OR</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PR">PR</option>
+                                        <option value="RI">RI</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SD">SD</option>
+                                        <option value="TN">TN</option>
+                                        <option value="TX">TX</option>
+                                        <option value="UT">UT</option>
+                                        <option value="VA">VA</option>
+                                        <option value="VI">VI</option>
+                                        <option value="VT">VT</option>
+                                        <option value="WA">WA</option>
+                                        <option value="WI">WI</option>
+                                        <option value="WV">WV</option>
+                                        <option value="WY">WY</option>
+                                        <option value="AB">AB</option>
+                                        <option value="BC">BC</option>
+                                        <option value="MB">MB</option>
+                                        <option value="NB">NB</option>
+                                        <option value="NL">NL</option>
+                                        <option value="NS">NS</option>
+                                        <option value="NT">NT</option>
+                                        <option value="NU">NU</option>
+                                        <option value="ON">ON</option>
+                                        <option value="PE">PE</option>
+                                        <option value="QC">QC</option>
+                                        <option value="SK">SK</option>
+                                        <option value="YT">YT</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2" for="phone">Phone:</label>
+                                    <div class="col-sm-3">
+                                      <input type="text" class="form-control" id="phone" placeholder="Phone Number" required>
+                                    </div>
+                                  </div>
+                                  <div class="employment-info text-center">
+                                    <p class="text-info">Campaign finance law requires us to collect your occupation and employer.</p>
+                                    <label class="checkbox">
+                                      <input type="checkbox" id="retired_checkbox" value="" required>Click here if you are retired or not employed
+                                    </label>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2" for="employment">Employment:</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="address" placeholder="occupation" required>
+                                    </div>
+                                    <div class="col-sm-3">
+                                      <input type="text" class="form-control" id="number" placeholder="employer" required>
                                     </div>
                                   </div>
                                 </form>
@@ -447,7 +550,7 @@
                                                     <option value="2039">2039</option>
                                                 </select>
                                               </div>
-                                          </div>                                   
+                                          </div>                                  
                                         </form>
                                    </div>
                                </div>
@@ -463,6 +566,7 @@
         <!-- JS Files -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.smartWizard.js"></script>
+        <script src="js/validator.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
