@@ -1,0 +1,138 @@
+/* Base Styles: */
+
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+a:hover { text-decoration: none }
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active > a {
+    background: none;
+    outline: 0;
+    color: #CFC91D;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #222 none repeat scroll 0 0;
+}
+.section-padding {
+    padding: 90px 0;
+}
+
+/* Elements Style Start Here */
+.wizard-nav li {
+  background: #A6A6A6 none repeat scroll 0 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 13px;
+  margin-right: 10px !important;
+  padding: 15px 10px !important;
+  text-align: center;
+  width: 10%;
+}
+.wizard-nav li.active {
+  background: #FC5959 none repeat scroll 0 0;
+  color: #fff;
+}
+.wizard-nav ul, .wizard-nav li {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.wizard-nav li.active a {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  font-weight: bold;
+}
+.wizard-nav li a {
+  background: #ecedf0 none repeat scroll 0 0;
+  border-radius: 1em;
+  color: #000;
+  display: inline-block;
+  height: 1.6em;
+  line-height: 1.6em;
+  margin-right: 0.5em;
+  text-align: center;
+  width: 1.6em;
+}
+.tab-content {
+  background: #f1f1f1 none repeat scroll 0 0;
+  margin-top: 10px;
+  padding: 20px;
+}
+.tab-content .tab-pane h2.StepTitle {
+  background-color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  clear: both;
+  color: #5a5655;
+  display: block;
+  font: bold 16px Verdana,Arial,Helvetica,sans-serif;
+  margin: 0;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+  z-index: 88;
+  margin-bottom: 25px;
+}
+.btn-donate {
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  padding: 14px 10px;
+  transition: all 0.3s ease 0s;
+  width: 8%;
+  border-radius: 0;
+  border: 0px;
+}
+.btn-donate:hover , .btn-donate.active {
+  background-color: #FC5959 !important;
+}
+.btn-donate.btn-customAmount {
+    padding: 12px 25px;
+    width: 14%;
+}
+#customAmount {
+    position: relative;
+    width: 90px;
+    color: #000;
+}
+.payment-promo {
+    margin-bottom: 25px;
+}
+.pager.wizard {
+    margin-top: 50px;
+}
+label.error {
+  color: red;
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.employment-info {
+  margin-bottom: 35px;
+}
