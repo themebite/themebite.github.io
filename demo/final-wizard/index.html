@@ -49,27 +49,49 @@
                             <div id="rootwizard">
                                 <nav class="wizard-nav">
                                     <ul>
-                                        <li><a href="#tab1" data-toggle="tab">1</a>Amount</li>
-                                        <li><a href="#tab2" data-toggle="tab">2</a>Name</li>
-                                        <li><a href="#tab3" data-toggle="tab">3</a>Finish</li>
+                                        <li><a href="#tab1" class="wizard-nav-element" data-toggle="tab">1</a>Amount</li>
+                                        <li><a href="#tab2" class="wizard-nav-element" data-toggle="tab">2</a>Name</li>
+                                        <li><a href="#tab3" class="wizard-nav-element" data-toggle="tab">3</a>Finish</li>
                                     </ul>
                                 </nav>
                                 <div class="tab-content">
                                     <div class="tab-pane" id="tab1">
                                         <h2 class="StepTitle">Your Contribution</h2>
                                         <div class="contribution-buttons nav">
-                                           <a class="btn btn-primary btn-lg btn-donate">$5</a>
-                                           <a class="btn btn-primary btn-lg btn-donate">$25</a>
-                                           <a class="btn btn-primary btn-lg btn-donate">$50</a>
-                                           <a class="btn btn-primary btn-lg btn-donate">$100</a>
-                                           <a class="btn btn-primary btn-lg btn-donate">$200</a>
-                                           <a class="btn btn-primary btn-lg btn-donate">$500</a>
-                                           <a class="btn btn-primary btn-lg btn-donate">$2700</a>
-                                           <a>
-                                            <label class="btn btn-primary btn-lg btn-donate btn-customAmount" for="">
-                                              $<input type="text" name="" id="customAmount" class="other-amount other-text input-mini">
-                                            </label>
-                                          </a>
+                                            <form>
+                                              <label>
+                                                <input type="radio" value="5" name="price" hidden>
+                                                <span>$5</span>
+                                              </label>
+                                              <label>
+                                                <input type="radio" value="25" name="price" hidden>
+                                                <span>$25</span>
+                                              </label>
+                                              <label>
+                                                <input type="radio" value="50" name="price" hidden>
+                                                <span>$50</span>
+                                              </label>
+                                              <label>
+                                                <input type="radio" value="100" name="price" hidden>
+                                                <span>$100</span>
+                                              </label>
+                                              <label>
+                                                <input type="radio" value="500" name="price" hidden>
+                                                <span>$500</span>
+                                              </label>
+                                              <label>
+                                                <input type="radio" value="1000" name="price" hidden>
+                                                <span>$1000</span>
+                                              </label>
+                                              <label>
+                                                <input type="radio" value="2700" name="price" hidden>
+                                                <span>$2700</span>
+                                              </label>
+                                              <p><label>
+                                                    <span class="customAmount">$ <input type="text" name="price"></span>   
+                                                </label>
+                                               </p>
+                                            </form>
                                        </div>
                                         <!-- <div class="control-group">
                                             <label class="control-label" for="email">Email</label>
@@ -561,8 +583,7 @@
         <!-- Site Markup Start here -->
 
         <!-- JS Files -->
-
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.bootstrap.wizard.min.js"></script>
         <script src="js/prettify.js"></script>

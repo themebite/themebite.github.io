@@ -136,3 +136,35 @@ label.error {
 .employment-info {
   margin-bottom: 35px;
 }
+.contribution-buttons label {
+    display: inline-block;
+    margin-right: 15px;
+}
+.contribution-buttons label span {
+  background-color: #4AA3DF;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 12px 25px;
+}
+
+.contribution-buttons label input[type="radio"]:checked + span,
+.contribution-buttons label span:hover,
+.contribution-buttons p label span input[type="radio"]:checked {
+  background-color: #FC5959;
+}
+
+.contribution-buttons p {
+  display: inline-block;
+  padding: 7px 0;
+}
+
+span.customAmount input {
+  color: #000;
+  width: 70px;
+  background: #F1F1F1;
+  border: none;
+}
