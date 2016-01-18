@@ -6,17 +6,18 @@
 
 #wrapper{
 	/*background-color:;*/
-	width: 1000px;
+	width: 1170px;
 	margin: 0 auto;
 	text-decoration: none;
 	float: center;
 	display:block;
 }
 
-#wrapper>#index_sidebar{
-	float: right;
-	width: 250px;
-	height: 700px;
+#wrapper > #index_sidebar {
+  float: right;
+  height: 100%;
+  margin-left: 5%;
+  width: 30%;
 }
 
 #index_sidebar>#webpage_path{
@@ -27,32 +28,34 @@
 	margin: 2px;
 }
 
-#wrapper>#index_sidebar>#index_my_games{
-	margin-top: 50px;
-	text-align: center;
+#wrapper > #index_sidebar > #index_my_games {
+  margin-top: 50px;
+  text-align: center;
+  padding-right: 24%;
 }
 
-#wrapper #index_main{
-	float: left;
-	width: 650px;
-	height: 700px;
+#wrapper #index_main {
+  float: left;
+  height: auto;
+  margin-right: 5%;
+  width: 60%;
 }
 
-#wrapper #index_main #index_play{
-	text-align: center;
-	font-size: 28px;
-	padding: 0px;
-	margin-top: 25px;
-	margin-left: 210px;
+#wrapper #index_main #index_play {
+  font-size: 28px;
+  margin-left: 0;
+  margin-top: 25px;
+  padding: 0;
+  text-align: center;
 }
 
-#index_main #menu_game_img{
-	height: 167px;
-	width: 324px;
-	padding: 0px;
-	margin-left: 262px;
-	margin-right: 162px;
-	margin-top: 75px;
+#index_main #menu_game_img {
+  height: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 75px;
+  padding: 0;
+  width: 50%;
 }
 
 #calendar{
@@ -87,7 +90,7 @@ header{
 	display: block;
 	float: right;
 	background-color: #DCDCDC;
-	width: 1000px;
+	width: 100%;
 	background:-webkit-gradient(linear,left top,left bottom,from(#DCDCDC),color-stop(0.50 #ECECEC),to(#F1F1F1));
 	background:-webkit-linear-gradient(top,#DCDCDC 0%,#ECECEC 50%,#F1F1F1 100%);
 	background:-moz-linear-gradient(top,#DCDCDC 0%,#ECECEC 50%,#F1F1F1 100%);
@@ -117,30 +120,24 @@ aside h3{
 	margin-top: 65px;
 	margin-right: 100px;
 }
-
-.logo{
-	background-image: url("../../images/logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	height: 90px;
-	width: 90px;
-	margin-left: 900px;
-	margin-right: 15px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	display: block;
-	float: right;
-	position: absolute;
+.logo {
+  background-image: url("../../images/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  float: right;
+  height: 90px;
+  margin: 5px 15px 5px 1000px;
+  position: absolute;
+  width: 90px;
 }
-
 .nav-bar {
-	position: relative;
-	list-style: none;
-	margin: 45px;
-	padding: 0;
-	float: right;
-	margin-right: 75px;
+  float: right;
+  list-style: outside none none;
+  margin: 19px 429px 4px 45px;
+  padding: 0;
+  position: relative;
 }
 
 .nav-bar li {
@@ -284,13 +281,12 @@ aside h3{
 
 /* Index */
 
-.index_p{
-	font-size: 18px;
-	text-align: justify;
-	margin: 0 auto;
-	width: 15em;
-	direction: rtl;
-	margin-left: 295px;
+.index_p {
+  direction: rtl;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: justify;
+  width: 15em;
 }
 
 table {
@@ -498,28 +494,21 @@ table {
 }
  
 .myButton3 {
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
-	background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-	background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-	background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-	background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-	background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
-	background-color: #44c767;
-	-moz-border-radius: 19px;
-	-webkit-border-radius: 19px;
-	border-radius: 19px;
-	border: 1px solid #18ab29;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 24px;
-	padding: 5px 17px;
-	margin-top: 10px;
-	margin-left:360px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #2f6627;	
+  background: #44c767 linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%) repeat scroll 0 0;
+  border: 1px solid #18ab29;
+  border-radius: 19px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 24px;
+  margin-left: 42.5%;
+  margin-right: 42.5%;
+  margin-top: 10px;
+  padding: 5px 17px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #2f6627;
+  width: 15%;
 }
 
 .myButton3:hover {
@@ -1723,143 +1712,130 @@ form b{
 
 
 /* Responsive Media Quearies */
+
 /* large desktops or only large desktops */
 @media (min-width: 1200px) {
-	#wrapper{
+
+}
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+ #wrapper{
 	/*background-color:;*/
-	width: 1000px;
+	width: 970px;
 	margin: 0 auto;
 	text-decoration: none;
 	float: center;
 	display:block;
-	background: #ddd;
-}
-
-}
-
-/* small desktops */
-@media (max-width: 1199px) {
-	#wrapper{
-	/*background-color:;*/
-	width: 1000px;
-	margin: 0 auto;
-	text-decoration: none;
-	float: center;
-	display:block;
-	background: #ddd;
-}
-
-}
-
-/* only small desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-	#wrapper{
-	/*background-color:;*/
-	width: 1000px;
-	margin: 0 auto;
-	text-decoration: none;
-	float: center;
-	display:block;
-	background: #ddd;
 }
 .logo {
-  height: 75px;
-  margin: 12px 15px 5px 790px;
-  width: 75px;
+  height: 80px;
+  margin: 5px 15px 5px 815px;
+  width: 80px;
 }
 .nav-bar {
-  margin: 30px 244px 10px 67px;
-}
-#wrapper > #index_sidebar {
-  width: 340px;
-}
-#wrapper > #index_sidebar > #index_my_games {
-  margin-bottom: 5px;
-  margin-left: -45px;
-  margin-top: 50px;
-  text-align: center;
-  width: 100%;
-}
-#wrapper #index_main {
-  height: 700px;
-  width: 650px;
-}
-#index_main #menu_game_img {
-  margin-left: 150px;
-  margin-right: 70px;
-  margin-top: 75px;
-  width: 324px;
-}
-#wrapper #index_main #index_play {
-  margin-left: -36px;
-  margin-top: 22px;
-}
-.index_p {
-  margin: 8px auto 0 166px;
+  margin: 19px 230px 4px 45px;
 }
 .myButton3 {
-  margin-left: 232px;
-  margin-top: 10px;
-  padding: 5px 17px;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
 }
+    
 }
-
-/* tablets */
-@media (max-width: 991px) {
-	#wrapper{
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+#wrapper{
 	/*background-color:;*/
-	width: 800px;
+	width: 750px;
 	margin: 0 auto;
 	text-decoration: none;
 	float: center;
 	display:block;
-}
-
-
-
-}
-
-/* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-#wrapper {
-  background: #ddd none repeat scroll 0 0;
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  width: 790px;
 }
 header {
   width: 100%;
 }
 .logo {
   height: 75px;
-  margin: 6px 15px 5px 648px;
+  margin: 10px 15px 5px 618px;
   width: 75px;
 }
 .nav-bar {
-  margin: 24px 245px 26px 10px;
+  margin: 31px 250px 8px 0;
 }
 .nav-bar li {
-  float: right;
-  margin: 0 30px 0 0;
+  margin: 0 20px 0 0;
 }
 .nav-bar li a {
   font-size: 20px;
-  padding: 6px 0;
+  padding: 8px 0;
 }
 .username {
-  margin-left: 10px !important;
-  margin-top: 3px !important;
+  font-size: 17px !important;
+  margin-left: 8px !important;
+  margin-top: 4px !important;
 }
 .profile {
-  margin-left: 26px;
+  margin-left: 40px;
   margin-top: 8px;
 }
-
-
+#wrapper > #index_sidebar {
+  height: 100%;
+  margin-left: 5%;
+  width: 30%;
+}
+#wrapper #index_main {
+  height: 100%;
+  margin-right: 5%;
+  width: 60%;
+}
+#index_main #menu_game_img {
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 75px;
+  width: 70%;
+}
+#wrapper #index_main #index_play {
+  font-size: 28px;
+  margin-left: 0;
+  margin-top: 25px;
+}
+.index_p {
+  font-size: 18px;
+  margin: 0 auto;
+  width: 15em;
+}
+.myButton3 {
+  font-size: 24px;
+  margin-left: 37.5%;
+  margin-right: 37.5%;
+  padding: 7px 17px;
+  width: 25%;
 }
 
-/* mobile or only mobile */
-@media (max-width: 767px) {
-	
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+#wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+#wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 }
