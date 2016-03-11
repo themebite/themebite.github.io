@@ -1,59 +1,13 @@
     $(document).ready(function() {
             // Wizard
-            'use strict';
-
-            var Wizard = function() {
-                this.wizard = $('.wizard-area');
-              this.nav    = this.wizard.find('wizard-nav');
-              this.steps  = this.wizard.find('.tab-content');
-              this.price  = false;
-              
-              var _this = this;
-              
-              this.steps.find('.tab-pane').on('onNext', 'form', function(e) {
-                e.preventDefault();
-                
-                var form     = $(this)
-                    , input    = form.find('p label span input')
-                  , checkbox = form.find('label input[type=radio]:checked');
-                
-                if( form.find('p label span input').val().length ) {
-                    _this.price = parseInt(form.find('p label span input').val());
-                } else if(checkbox.length) {
-                    _this.price = parseInt(checkbox.val());
-                }
-                
-                _this.openNextStep();
-              });
-            };
-
-            Wizard.prototype.openNextStep = function() {
-                if(!this.price) {
-                this.showError('Please select a price first');
-              } else {
-                this.steps
-                    .find('.tab-pane.active').removeClass('active')
-                  .next('.tab-pane').addClass('active')
-                  .find('p.price').html(this.price);
-                 
-                this.nav
-                    .find('li.active').removeClass('active')
-                  .next().addClass('active');
-              }
-            };
-
-            Wizard.prototype.showError = function(message) {
-                this.nav.closest('.container').append('<p class="text-danger">' + message + '</p>');
-            };
-
-            var wizard = new Wizard;
-
-    		// Highlight Donation Button
-		    $('.btn-donate').click(function() {
-			    $(".btn-donate").removeClass("active");
-			    // $(".tab").addClass("active"); // instead of this do the below 
-			    $(this).addClass("active");   
-			});
+            // $(".next").click(function(){
+            //     var isChecked = jQuery("input[name=chest]:checked").val();
+            //      if(!isChecked){
+            //          alert('Nothing Selected');
+            //      }else{
+            //          alert('You have selected :'+isChecked);
+            //      }
+            // });
 
             // Toggle Emplyment Info
             var $emplymentInfo = $('.emplyment-section');

@@ -153,11 +153,11 @@ label.error {
 
 .contribution-buttons label input[type="radio"]:checked + span,
 .contribution-buttons label span:hover,
-.contribution-buttons p label span input[type="radio"]:checked {
+.contribution-buttons label span input[type="radio"]:checked span.customAmount {
   background-color: #FC5959;
 }
 
-.contribution-buttons p {
+.contribution-buttons  {
   display: inline-block;
   padding: 7px 0;
 }

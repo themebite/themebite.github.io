@@ -1,0 +1,35 @@
+/**
+ * desktop first edia query
+ * same breakpoints as bootstrap
+ * sagir.hossain.524@gmail.com
+ */
+
+/* large desktops or only large desktops */
+@media (min-width: 1200px) {
+
+}
+
+/* small desktops */
+@media (max-width: 1199px) {
+
+}
+
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* tablets */
+@media (max-width: 991px) {
+
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+
+}
